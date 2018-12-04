@@ -48,7 +48,17 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.3\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.5.0.1205, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.5.0.1205\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -68,10 +78,73 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Doctores.xaml.vb">
+      <DependentUpon>Doctores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.xaml.vb">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\MessageClsDlg.xaml.vb">
+      <DependentUpon>MessageClsDlg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\MessageDialog.xaml.vb">
+      <DependentUpon>MessageDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\MssgSsCls.xaml.vb">
+      <DependentUpon>MssgSsCls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelsDR\Drpanel1.xaml.vb">
+      <DependentUpon>Drpanel1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelsDR\Drpanel10.xaml.vb">
+      <DependentUpon>Drpanel10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelsDR\Drpanel2.xaml.vb">
+      <DependentUpon>Drpanel2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelsDR\Drpanel3.xaml.vb">
+      <DependentUpon>Drpanel3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelsDR\Drpanel4.xaml.vb">
+      <DependentUpon>Drpanel4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelsDR\Drpanel5.xaml.vb">
+      <DependentUpon>Drpanel5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelsDR\Drpanel6.xaml.vb">
+      <DependentUpon>Drpanel6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelsDR\Drpanel7.xaml.vb">
+      <DependentUpon>Drpanel7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelsDR\Drpanel8.xaml.vb">
+      <DependentUpon>Drpanel8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelsDR\Drpanel9.xaml.vb">
+      <DependentUpon>Drpanel9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Secretarias.xaml.vb">
+      <DependentUpon>Secretarias.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Administrador.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Doctores.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Administrador.xaml.vb">
+      <DependentUpon>Administrador.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Application.xaml.vb">
       <DependentUpon>Application.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -80,6 +153,62 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Dialogs\MessageClsDlg.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialogs\MessageDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialogs\MssgSsCls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelsDR\Drpanel1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelsDR\Drpanel10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelsDR\Drpanel2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelsDR\Drpanel3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelsDR\Drpanel4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelsDR\Drpanel5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelsDR\Drpanel6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelsDR\Drpanel7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelsDR\Drpanel8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelsDR\Drpanel9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Secretarias.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Import Include="System.Threading.Tasks" />
@@ -127,9 +256,20 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Logotipo Hospital Nuestra Señora del Carmen - editable transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PanelsAD\" />
+    <Folder Include="PanelsSCR\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
